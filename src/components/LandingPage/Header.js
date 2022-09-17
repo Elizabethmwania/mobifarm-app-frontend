@@ -44,6 +44,7 @@ const Header = () => {
               <i className="fa fa-play" />
               Watch video
             </Button>
+            &nbsp;&nbsp;
             <Button className="btn-round" color="neutral" type="button" outline>
               Get started
             </Button>

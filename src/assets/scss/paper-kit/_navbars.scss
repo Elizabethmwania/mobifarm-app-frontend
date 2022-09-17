@@ -12,8 +12,8 @@
     font-size: $font-size-base;
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
-    padding: 0;
-    background: $white-color;
+    padding: 10px;
+    background: #7ce717;
     box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
 
     .navbar-brand {
@@ -49,7 +49,7 @@
             text-transform: uppercase;
             font-weight: 600;
             color: $default-color;
-
+            margin-top: -30px;
             p {
               margin: 0px 0px;
               text-transform: uppercase;
@@ -107,7 +107,7 @@
         }
 
         &:after {
-          background-color: #FFFCF5;
+          background-color: #7ce717;
         }
     }
     #navbarSupportedContent{
@@ -122,8 +122,12 @@
         right: -2px;
     }
     .btn{
-       margin: 14px 3px;
+       //margin: 14px 3px;
        font-size: $font-size-small;
+       margin-top: -32px;
+       margin-bottom: -10px;
+       border-radius: 0px;
+       height: 70px;
        i{
            font-size: 14px;
            position: relative;
@@ -138,11 +142,12 @@
     }
     &.navbar-transparent {
       background: transparent !important;
-      padding-top: 25px;
+      margin-top: 0px;
       box-shadow: none;
 
       .navbar-brand {
         color: $white-color;
+        padding-top: 10px;
       }
 
       .navbar-nav {
@@ -153,7 +158,7 @@
 
       .navbar-toggler {
         .navbar-toggler-bar {
-          background: $white-color !important;
+          background: rgb(76, 196, 20) !important;
         }
       }
     }
@@ -187,7 +192,7 @@
     }
     .navbar-toggler {
       .navbar-toggler-bar {
-        background: $white-color !important;
+        background: rgb(13, 233, 13) !important;
         display: block;
         position: relative;
         width: 24px;

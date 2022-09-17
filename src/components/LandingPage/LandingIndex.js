@@ -21,6 +21,7 @@ import {
 } from "reactstrap";
 
 import Header from './Header';
+import LandingNavbar from './LandingNavbar';
 
 const LandingIndex = () => {
   document.documentElement.classList.remove("nav-open");
@@ -32,6 +33,7 @@ const LandingIndex = () => {
   });
   return (
     <>
+    <LandingNavbar />
     <Header />
     <div className='main'>
       <div className='section text-center'>

@@ -1,10 +1,9 @@
 import React from 'react';
-import training from '../../img/training.png'
+import training from '../../img/feature-2.png'
 import { Button, Container, Row, Col } from "reactstrap";
 const Content = () => {
     return (
-        <>
-      <div className="section section-dark section-nucleo-icons">
+      <div className="section text-center section-dark">
         <Container>
           <Row>
             <Col lg="6" md="12">
@@ -29,14 +28,13 @@ const Content = () => {
             </Col>
             <Col lg="6" md="12">
             <div className="icons-container">
-            <img src={training} />
+            <img src={training} height="300" width="300"/>
             </div>
                 
             </Col>
           </Row>
         </Container>
-      </div>{" "}
-    </>
+      </div>
     );
 };
 

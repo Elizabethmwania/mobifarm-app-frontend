@@ -10,7 +10,12 @@ import {
     NavLink,
     Nav,
     Container,
-    Button
+    Button,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+
   } from "reactstrap";
 
 const LandingNavbar = () => {
@@ -88,11 +93,54 @@ const LandingNavbar = () => {
                   <i className="nc-icon nc-book-bookmark" /> About Us
                 </NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink to="/">
-                    <i className="nc-icon nc-book-bookmark" /> Individuals
-                </NavLink>
-              </NavItem>
+              <UncontrolledDropdown nav inNavbar>
+                      <DropdownToggle
+                        aria-expanded={false}
+                        aria-haspopup={true}
+                        caret
+                        color="default"
+                        data-toggle="dropdown"
+                        href="#"
+                        id="dropdownMenuButton"
+                        nav
+                        onClick={(e) => e.preventDefault()}
+                        role="button"
+                      >
+                        Individuals
+                      </DropdownToggle>
+                      <DropdownMenu
+                        aria-labelledby="dropdownMenuButton"
+                        className="dropdown-info"
+                      >
+                        
+                        <DropdownItem
+                          href="#"
+                          onClick={(e) => e.preventDefault()}
+                        >
+                          Farmers
+                        </DropdownItem>
+                        <DropdownItem
+                          href="#"
+                          onClick={(e) => e.preventDefault()}
+                        >
+                          Offtakers
+                        </DropdownItem>
+                        <DropdownItem
+                          href="#"
+                          onClick={(e) => e.preventDefault()}
+                        >
+                          Agro Dealers
+                        </DropdownItem>
+                        <DropdownItem
+                          href="#"
+                          onClick={(e) => e.preventDefault()}
+                        >
+                          Financial Institution
+                        </DropdownItem>
+                        <DropdownItem divider />
+                       
+                      </DropdownMenu>
+                    </UncontrolledDropdown>
               <NavItem>
                 <NavLink to="/">
                     <i className="nc-icon nc-book-bookmark" /> Contact
@@ -106,6 +154,7 @@ const LandingNavbar = () => {
                   <i className="nc-icon nc-spaceship"></i> Call Now! <br/> +254734246801
                 </Button>
               </NavItem>
+              
             </Nav>
           </Collapse>
         </Container>

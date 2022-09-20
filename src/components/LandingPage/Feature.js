@@ -1,8 +1,8 @@
 import React from 'react';
 //imges
-import feature1 from '../../img/feature-1.png';
-import feature2 from '../../img/feature-2.png';
-import feature3 from '../../img/feature-3.png';
+import feature1 from '../../img/features/feature-1.png';
+import feature2 from '../../img/features/feature-2.png';
+import feature3 from '../../img/features/feature-3.png';
 import {
   Button,
   Container,

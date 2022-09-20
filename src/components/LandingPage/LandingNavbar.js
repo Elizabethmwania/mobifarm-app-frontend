@@ -59,7 +59,7 @@ const LandingNavbar = () => {
           <div className="navbar-translate">
             <NavbarBrand
               data-placement="bottom"
-              to="/index"
+              to="/"
               target="_blank"
               tag={Link}
             >
@@ -114,16 +114,14 @@ const LandingNavbar = () => {
                       >
                         
                         <DropdownItem
-                          href="#"
                           onClick={(e) => e.preventDefault()}
                         >
-                          Farmers
+                          <Link to="/farmers">Farmers</Link>
                         </DropdownItem>
                         <DropdownItem
-                          href="#"
                           onClick={(e) => e.preventDefault()}
                         >
-                          Offtakers
+                          <Link to="/offtakers">Offtakers</Link>
                         </DropdownItem>
                         <DropdownItem
                           href="#"

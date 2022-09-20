@@ -1,5 +1,5 @@
 import React from 'react';
-import training from '../../img/feature-2.png'
+import training from '../../img/features/feature-2.png'
 import { Button, Container, Row, Col } from "reactstrap";
 const Content = () => {
     return (

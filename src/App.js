@@ -8,17 +8,12 @@ import FarmerIndex from './components/FarmersPage/FarmerIndex';
 import LandingIndex from './components/LandingPage/LandingIndex';
 import Login from './components/OfftakerPage/Login/Login';
 import Dashboard from './components/OfftakerPage/Dashboard/Dashboard';
+import Clients from './components/OfftakerPage/Clients/Clients';
+import Products from './components/OfftakerPage/Products/Products';
 
 
 function App() {
-  
-  
-//   return (
-//     <div>
-//       <Test />
-//     </div>
-//   );
-// }
+ 
   return (
     
     <BrowserRouter>
@@ -27,6 +22,8 @@ function App() {
         <Route path='/farmers' element={<FarmerIndex />} />
         <Route path='/offtaker-login' element={<Login />} />
         <Route path='/offtaker-dashboard' element={<Dashboard />} />
+        <Route path='/offtaker-clients' element={<Clients />} />
+        <Route path='/offtaker-products' element={<Products />} />
 
         
       </Routes>

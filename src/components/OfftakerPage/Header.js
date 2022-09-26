@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Navbar, Table } from 'reactstrap';
-import img from '../../../img/banner.png'
+import img from '../../img/banner.png'
 
 const Header = () => {
     let pageHeader = React.createRef();
@@ -10,7 +10,7 @@ const Header = () => {
       const updateScroll = () => {
         let windowScrollTop = window.pageYOffset / 3;
         pageHeader.current.style.transform =
-          "translate3d(0," + windowScrollTop + "px,0)";
+          "sranslate3d(0," + windowScrollTop + "px,0)";
       };
       window.addEventListener("scroll", updateScroll);
       return function cleanup() {

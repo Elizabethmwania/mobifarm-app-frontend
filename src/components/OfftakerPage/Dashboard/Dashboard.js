@@ -1,10 +1,10 @@
 import React from 'react';
-import FarmersDebts from './FarmersDebts';
-import Footer from './Footer';
-import Header from './Header';
+import FarmersDebts from '../Dashboard/FarmersDebts';
+import Footer from '../../Common/Footer';
+import Header from '../Header';
 import MainContainer from './MainContainer';
-import OfftakerNavbar from './OfftakerNavbar';
-import SideNav from './SideNav';
+import OfftakerNavbar from '../OfftakerNavbar';
+import SideNav from '../SideNav';
 const Dashboard = () => {
     return (
         <>

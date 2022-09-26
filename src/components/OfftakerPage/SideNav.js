@@ -20,7 +20,7 @@ const SideNav = () => {
                     </Link>
                 </li>
                 <li class="nav-item menu-items">
-                    <Link to='/offtaker-dashboard'
+                    <Link to='/offtaker-clients'
                     className="nav-link" >
                         <span class="menu-icon">
                             <i class="mdi mdi-laptop"></i>
@@ -29,7 +29,7 @@ const SideNav = () => {
                     </Link>
                 </li>
                 <li class="nav-item menu-items">
-                    <Link to='/offtaker-dashboard'
+                    <Link to='/offtaker-products'
                     className="nav-link" >
                         <span class="menu-icon">
                             <i class="mdi mdi-playlist-play"></i>

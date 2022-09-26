@@ -121,7 +121,7 @@ const LandingNavbar = () => {
                         <DropdownItem
                           onClick={(e) => e.preventDefault()}
                         >
-                          <Link to="/offtakers">Offtakers</Link>
+                          <Link to="/offtaker-login">Offtakers</Link>
                         </DropdownItem>
                         <DropdownItem
                           href="#"

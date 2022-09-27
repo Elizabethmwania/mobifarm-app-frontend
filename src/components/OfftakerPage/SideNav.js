@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const SideNav = () => {
     return (
         
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar" style={{backgroundColor:'#e8ecf1'}}>
             <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
                 <a class="sidebar-brand brand-logo" href=""><h3>Mobifarm</h3></a>
                 <a class="sidebar-brand brand-logo-mini" href=""><h3>M</h3></a>
@@ -38,7 +38,7 @@ const SideNav = () => {
                     </Link>
                 </li>
                 <li class="nav-item menu-items">
-                    <Link to='/offtaker-dashboard'
+                    <Link to='/offtaker-payments'
                     className="nav-link" >
                         <span class="menu-icon">
                             <i class="mdi mdi-table-large"></i>
@@ -47,7 +47,7 @@ const SideNav = () => {
                     </Link>
                 </li>
                 <li class="nav-item menu-items">
-                    <Link to='/offtaker-dashboard'
+                    <Link to='/farmer-registration'
                     className="nav-link" >
                         <span class="menu-icon">
                             <i class="mdi mdi-file-document-box"></i>

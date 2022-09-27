@@ -26,8 +26,8 @@ const OfftakerNavbar = () => {
                   <li class="nav-item dropdown">
                       <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#"
                           data-toggle="dropdown" aria-expanded="false">
-                          <i class="mdi mdi-email"></i>
-                          <span class="count bg-success"></span>
+                          <i className="mdi mdi-email"></i>
+                          <span className="count bg-success"></span>
                       </a>
                       <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                           aria-labelledby="messageDropdown">

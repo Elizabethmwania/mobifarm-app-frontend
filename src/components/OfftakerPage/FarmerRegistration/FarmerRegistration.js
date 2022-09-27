@@ -2,16 +2,16 @@ import React from 'react';
 import Footer from '../../Common/Footer';
 import OfftakerNavbar from '../OfftakerNavbar';
 import SideNav from '../SideNav';
-import ProductList from './ProductList';
+import RegistrationForm from './RegistrationForm';
 
-const Products = () => {
+const FarmerRegistration = () => {
     return (
         <>
         <div class="container-scroller">
         <SideNav />
         <div class="container-fluid page-body-wrapper">
         <OfftakerNavbar />
-        <ProductList />
+        <RegistrationForm />
         </div>
         </div>
         <Footer />
@@ -19,4 +19,4 @@ const Products = () => {
     );
 };
 
-export default Products;
+export default FarmerRegistration;

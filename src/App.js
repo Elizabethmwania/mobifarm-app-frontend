@@ -10,6 +10,8 @@ import Login from './components/OfftakerPage/Login/Login';
 import Dashboard from './components/OfftakerPage/Dashboard/Dashboard';
 import Clients from './components/OfftakerPage/Clients/Clients';
 import Products from './components/OfftakerPage/Products/Products';
+import Payment from './components/OfftakerPage/Payments/Payment';
+import FarmerRegistration from './components/OfftakerPage/FarmerRegistration/FarmerRegistration';
 
 
 function App() {
@@ -24,6 +26,9 @@ function App() {
         <Route path='/offtaker-dashboard' element={<Dashboard />} />
         <Route path='/offtaker-clients' element={<Clients />} />
         <Route path='/offtaker-products' element={<Products />} />
+        <Route path='/offtaker-payments' element={<Payment />} />
+        <Route path='/farmer-registration' element={<FarmerRegistration />} />
+
 
         
       </Routes>

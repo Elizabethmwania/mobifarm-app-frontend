@@ -2,16 +2,17 @@ import React from 'react';
 import Footer from '../../Common/Footer';
 import OfftakerNavbar from '../OfftakerNavbar';
 import SideNav from '../SideNav';
-import ProductList from './ProductList';
+import FileUpload from './FileUpload';
 
-const Products = () => {
+const Payment = () => {
+    
     return (
         <>
         <div class="container-scroller">
         <SideNav />
         <div class="container-fluid page-body-wrapper">
         <OfftakerNavbar />
-        <ProductList />
+        <FileUpload />
         </div>
         </div>
         <Footer />
@@ -19,4 +20,4 @@ const Products = () => {
     );
 };
 
-export default Products;
+export default Payment;

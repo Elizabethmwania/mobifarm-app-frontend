@@ -16,6 +16,10 @@ import DealerLogin from './components/AgrodealerPage/Login/DealerLogin';
 import DealerDashboard from './components/AgrodealerPage/Dashboard/DealerDashboard';
 import DealerClients from './components/AgrodealerPage/Clients/DealerClients';
 import DealerLoans from './components/AgrodealerPage/Loans/DealerLoans';
+import AdminLogin from './components/FinancialInstitution/Login/AdminLogin';
+import AdminDashboard from './components/FinancialInstitution/Dashboard/AdminDashboard';
+import LoanStatistics from './components/FinancialInstitution/LoanStatistics/LoanStatistics';
+import ClientRecords from './components/FinancialInstitution/ClientsRecords/ClientRecords';
 
 
 function App() {
@@ -41,6 +45,13 @@ function App() {
         <Route path='/dealers-clients' element={<DealerClients />} />
         <Route path='/dealers-loans' element={<DealerLoans />} />
         
+        {/* Admin */}
+        <Route path='/admin-login' element={<AdminLogin />} />
+        <Route path='/admin-dashboard' element={<AdminDashboard />} />
+        <Route path='/loans-statistics' element={<LoanStatistics />} />
+        <Route path='/farmers-records' element={<ClientRecords />} />
+       
+       
       </Routes>
     </BrowserRouter>
     

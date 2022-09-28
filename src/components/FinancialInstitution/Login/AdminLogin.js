@@ -14,9 +14,9 @@ import {
     Row,
     Col
   } from "reactstrap";
-import DealerLoginNav from './DealerLoginNav';
+import AdminLoginNav from './AdminLoginNav';
 
-const DealerLogin = () => {
+const AdminLogin = () => {
   const nav = useNavigate();
     // React States  
   const [errorMessages, setErrorMessages] = useState({});
@@ -24,7 +24,7 @@ const DealerLogin = () => {
   // User Login info
   const database = [
     {
-      username: "Dealer",
+      username: "Admin",
       password: "123456789"
     },
     {
@@ -54,7 +54,7 @@ const DealerLogin = () => {
         setErrorMessages({ name: "pass", message: errors.pass });
       } else {
         setIsSubmitted(true);
-        nav("/dealers-dashboard");
+        nav("/admin-dashboard");
       }
     } else {
       // Username not found
@@ -70,7 +70,7 @@ const DealerLogin = () => {
 
     const renderForm = (
         <>
-        <DealerLoginNav />
+        <AdminLoginNav />
         <div
           className="section section-image section-login"
           style={{
@@ -81,7 +81,7 @@ const DealerLogin = () => {
             <Row>
               <Col className="mx-auto" lg="4" md="6">
                 <Card className="card-register">
-                  <h3 className="title mx-auto">Offtaker Login</h3>
+                  <h3 className="title mx-auto">Admin Login</h3>
                   
                   <Form className="register-form" onSubmit={handleSubmit}>
                     <label>Account Name</label>
@@ -143,7 +143,6 @@ const DealerLogin = () => {
       </>
       );
   
-
     return (
         <div className="">
             <div className="">
@@ -157,4 +156,4 @@ const DealerLogin = () => {
     );
 };
 
-export default DealerLogin;
+export default AdminLogin;

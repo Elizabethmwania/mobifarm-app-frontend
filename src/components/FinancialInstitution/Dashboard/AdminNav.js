@@ -4,7 +4,7 @@ import face2 from '../../../img/faces/face2.jpg'
 import face3 from '../../../img/faces/face3.jpg'
 import face15 from '../../../img/faces/face15.jpg'
 
-const DealerNav = () => {
+const AdminNav = () => {
     return (
         <nav class="navbar p-0 fixed-top d-flex flex-row">
             <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
@@ -162,4 +162,4 @@ const DealerNav = () => {
     );
 };
 
-export default DealerNav;
+export default AdminNav;

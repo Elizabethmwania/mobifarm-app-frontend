@@ -3,7 +3,7 @@ import React from 'react';
 const DashboardContent = () => {
     return (
         <div className='row'>
-            <div class="col-xl-4 col-sm-6 grid-margin stretch-card">
+            <div className="col-xl-4 col-sm-6 grid-margin stretch-card">
                         <div class="card bg-success">
                             <div class="card-body">
                                 <h5>Active Loans</h5>

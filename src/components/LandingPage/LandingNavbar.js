@@ -124,7 +124,6 @@ const LandingNavbar = () => {
                           <Link to="/offtaker-login">Offtakers</Link>
                         </DropdownItem>
                         <DropdownItem
-                          href="#"
                           onClick={(e) => e.preventDefault()}
                         >
                           <Link to="/dealers-login">
@@ -132,10 +131,11 @@ const LandingNavbar = () => {
                           </Link>
                         </DropdownItem>
                         <DropdownItem
-                          href="#"
                           onClick={(e) => e.preventDefault()}
                         >
-                          Financial Institution
+                          <Link to="/admin-login">
+                            Financial Institution
+                          </Link>
                         </DropdownItem>
                         <DropdownItem divider />
                        

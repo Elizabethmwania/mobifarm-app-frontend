@@ -12,7 +12,8 @@ import {
     Button
   } from "reactstrap";
 
-const DealerLoginNav = () => {
+  
+const AdminLoginNav = () => {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
@@ -42,9 +43,9 @@ const DealerLoginNav = () => {
       window.removeEventListener("scroll", updateNavbarColor);
     };
     });
-  
+
     return (
-      <Navbar
+    <Navbar
       className={classnames("fixed-top", navbarColor)}
       color-on-scroll="300"
       expand="lg"
@@ -90,7 +91,7 @@ const DealerLoginNav = () => {
             </NavItem>
             <NavItem>
               <NavLink>
-                 Agro Dealer
+                 Admin
               </NavLink>
             </NavItem>
           </Nav>
@@ -100,4 +101,5 @@ const DealerLoginNav = () => {
     );
 };
 
-export default DealerLoginNav;
+
+export default AdminLoginNav;

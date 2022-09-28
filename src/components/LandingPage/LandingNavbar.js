@@ -127,7 +127,9 @@ const LandingNavbar = () => {
                           href="#"
                           onClick={(e) => e.preventDefault()}
                         >
+                          <Link to="/dealers-login">
                           Agro Dealers
+                          </Link>
                         </DropdownItem>
                         <DropdownItem
                           href="#"

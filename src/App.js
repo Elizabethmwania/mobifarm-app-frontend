@@ -12,6 +12,10 @@ import Clients from './components/OfftakerPage/Clients/Clients';
 import Products from './components/OfftakerPage/Products/Products';
 import Payment from './components/OfftakerPage/Payments/Payment';
 import FarmerRegistration from './components/OfftakerPage/FarmerRegistration/FarmerRegistration';
+import DealerLogin from './components/AgrodealerPage/Login/DealerLogin';
+import DealerDashboard from './components/AgrodealerPage/Dashboard/DealerDashboard';
+import DealerClients from './components/AgrodealerPage/Clients/DealerClients';
+import DealerLoans from './components/AgrodealerPage/Loans/DealerLoans';
 
 
 function App() {
@@ -20,8 +24,10 @@ function App() {
     
     <BrowserRouter>
       <Routes>
+        {/* landingpage */}
         <Route exact path="/" element={<LandingIndex />} />
         <Route path='/farmers' element={<FarmerIndex />} />
+        {/* offftakers */}
         <Route path='/offtaker-login' element={<Login />} />
         <Route path='/offtaker-dashboard' element={<Dashboard />} />
         <Route path='/offtaker-clients' element={<Clients />} />
@@ -29,7 +35,11 @@ function App() {
         <Route path='/offtaker-payments' element={<Payment />} />
         <Route path='/farmer-registration' element={<FarmerRegistration />} />
 
-
+        {/* agrodealers */}
+        <Route path='/dealers-login' element={<DealerLogin />} />
+        <Route path='/dealers-dashboard' element={<DealerDashboard />} />
+        <Route path='/dealers-clients' element={<DealerClients />} />
+        <Route path='/dealers-loans' element={<DealerLoans />} />
         
       </Routes>
     </BrowserRouter>

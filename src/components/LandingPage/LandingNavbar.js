@@ -84,15 +84,21 @@ const LandingNavbar = () => {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink to="/" tag={Link}>
-                  <i className="nc-icon nc-layout-11" /> Home
-                </NavLink>
+              {/* <NavItem> */}
+              <NavLink to="/" tag={Link}>
+                <i className="nc-icon nc-layout-11" /> Home
+              </NavLink>
+            </NavItem>
+              <NavItem>
+              <NavLink to="/about" tag={Link}>
+                <i className="nc-icon nc-layout-11" /> About Us
+              </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/">
-                  <i className="nc-icon nc-book-bookmark" /> About Us
-                </NavLink>
-              </NavItem>
+              <NavLink to="/contact" tag={Link}>
+                <i className="nc-icon nc-layout-11" /> Contact
+              </NavLink>
+            </NavItem>
               <UncontrolledDropdown nav inNavbar>
                       <DropdownToggle
                         aria-expanded={false}
@@ -115,45 +121,41 @@ const LandingNavbar = () => {
                         
                         <DropdownItem
                           onClick={(e) => e.preventDefault()}
-                        >
-                          <Link to="/farmers">Farmers</Link>
+                          >
+                
+                          <Link to="/farmers">
+                            Farmers
+                          </Link>
                         </DropdownItem>
                         <DropdownItem
                           onClick={(e) => e.preventDefault()}
-                        >
-                          <Link to="/offtaker-login">Offtakers</Link>
+                           tag={Link} color="link">
+                          <Link to="/offtaker-login">
+                          Offtakers
+                          </Link>  
                         </DropdownItem>
                         <DropdownItem
                           onClick={(e) => e.preventDefault()}
-                        >
-                          <Link to="/dealers-login">
+                          to="/dealers-login" tag={Link}>
                           Agro Dealers
-                          </Link>
                         </DropdownItem>
                         <DropdownItem
                           onClick={(e) => e.preventDefault()}
-                        >
-                          <Link to="/admin-login">
+                          to="/admin-login" tag={Link}>
                             Financial Institution
-                          </Link>
                         </DropdownItem>
-                        <DropdownItem divider />
                        
                       </DropdownMenu>
                     </UncontrolledDropdown>
-              <NavItem>
-                <NavLink to="/">
-                    <i className="nc-icon nc-book-bookmark" /> Contact
-                </NavLink>
-              </NavItem>
-              <NavItem>
+              
+              {/* <NavItem>
                 <Button
                   className="btn-round"
                   color="danger"
                 >
                   <i className="nc-icon nc-spaceship"></i> Call Now! <br/> +254734246801
                 </Button>
-              </NavItem>
+              </NavItem> */}
               
             </Nav>
           </Collapse>

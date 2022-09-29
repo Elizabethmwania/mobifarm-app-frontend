@@ -1,6 +1,10 @@
 import React from 'react';
+import Footer from '../Common/Footer';
+import Trainers from '../LandingPage/Trainers';
+import Enroll from './Enroll';
 import FarmerHeader from './FarmerHeader';
 import FarmerNavBar from './FarmerNavBar';
+import Training from './Training';
 
 
 const FarmerIndex = () => {
@@ -15,6 +19,11 @@ const FarmerIndex = () => {
         <>
         <FarmerHeader />
         <FarmerNavBar />
+        <Training />
+        <Enroll />
+        <Trainers />
+        <Footer />
+        
         </>
     );
 };

@@ -33,11 +33,11 @@ const Trainers = () => {
                         Lorem ipsum dolor sit amet, consecte-tur adipiscing elit,
                         sed do eiusmod tem por incididunt.</p>
                     </CardBody>
-                    {/* <CardFooter className="text-center">
+                    <CardFooter className="text-center">
                         <Button
                         className="btn-just-icon btn-neutral"
                         color="red"
-                        href="#"
+                        href=""
                         onClick={(e) => e.preventDefault()}
                         >
                         <i className="fa fa-twitter" />
@@ -45,7 +45,7 @@ const Trainers = () => {
                         <Button
                         className="btn-just-icon btn-neutral ml-1"
                         color="link"
-                        href="#pablo"
+                        href=""
                         onClick={(e) => e.preventDefault()}
                         >
                         <i className="fa fa-google-plus" />
@@ -53,12 +53,12 @@ const Trainers = () => {
                         <Button
                         className="btn-just-icon btn-neutral ml-1"
                         color="link"
-                        href="#pablo"
+                        href=""
                         onClick={(e) => e.preventDefault()}
                         >
                         <i className="fa fa-linkedin" />
                         </Button>
-                    </CardFooter> */}
+                    </CardFooter>
                     </Card>
                 </Col>
                 <Col md="4">
@@ -83,11 +83,11 @@ const Trainers = () => {
                         sed do eiusmod tem por incididunt.
                         </p>
                     </CardBody>
-                    {/* <CardFooter className="text-center">
+                    <CardFooter className="text-center">
                         <Button
                         className="btn-just-icon btn-neutral"
                         color="link"
-                        href="#pablo"
+                        href=""
                         onClick={(e) => e.preventDefault()}
                         >
                         <i className="fa fa-twitter" />
@@ -95,7 +95,7 @@ const Trainers = () => {
                         <Button
                         className="btn-just-icon btn-neutral ml-1"
                         color="link"
-                        href="#pablo"
+                        href=""
                         onClick={(e) => e.preventDefault()}
                         >
                         <i className="fa fa-google-plus" />
@@ -103,12 +103,12 @@ const Trainers = () => {
                         <Button
                         className="btn-just-icon btn-neutral ml-1"
                         color="link"
-                        href="#pablo"
+                        href=""
                         onClick={(e) => e.preventDefault()}
                         >
                         <i className="fa fa-linkedin" />
                         </Button>
-                    </CardFooter> */}
+                    </CardFooter>
                     </Card>
                 </Col>
                 <Col md="4">
@@ -133,7 +133,7 @@ const Trainers = () => {
                         sed do eiusmod tem por incididunt.
                         </p>
                     </CardBody>
-                    {/* <CardFooter className="text-center">
+                    <CardFooter className="text-center">
                         <Button
                         className="btn-just-icon btn-neutral"
                         color="link"
@@ -145,7 +145,7 @@ const Trainers = () => {
                         <Button
                         className="btn-just-icon btn-neutral ml-1"
                         color="link"
-                        href="#pablo"
+                        href="#"
                         onClick={(e) => e.preventDefault()}
                         >
                         <i className="fa fa-google-plus" />
@@ -153,12 +153,12 @@ const Trainers = () => {
                         <Button
                         className="btn-just-icon btn-neutral ml-1"
                         color="link"
-                        href="#pablo"
+                        href="#"
                         onClick={(e) => e.preventDefault()}
                         >
                         <i className="fa fa-linkedin" />
                         </Button>
-                    </CardFooter> */}
+                    </CardFooter>
                     </Card>
                 </Col>
               </Row>

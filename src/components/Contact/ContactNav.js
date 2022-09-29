@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Link } from "react-router-dom";
 
 import classnames from "classnames";
@@ -15,7 +16,7 @@ import {
   Button
 } from "reactstrap";
 
-const FarmerNavBar = () => {
+const ContactNav = () => {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
@@ -44,6 +45,7 @@ const FarmerNavBar = () => {
       window.removeEventListener("scroll", updateNavbarColor);
     };
     });
+  
     return (
     <Navbar
       className={classnames("fixed-top", navbarColor)}
@@ -90,14 +92,14 @@ const FarmerNavBar = () => {
             </NavItem>
             <NavItem>
               <NavLink>
-                Farmers
+                Contact
               </NavLink>
             </NavItem>
           </Nav>
         </Collapse>
       </Container>
     </Navbar>
-  );
-}
+    );
+};
 
-export default FarmerNavBar;
+export default ContactNav;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Container } from "reactstrap";
-
+import { Link } from 'react-router-dom';
 const Header = () => {
     let pageHeader = React.createRef();
 
@@ -45,8 +45,10 @@ const Header = () => {
               Watch video
             </Button>
             &nbsp;&nbsp;
-            <Button className="btn-round" color="neutral" type="button" outline>
+            <Button className="btn-round" color="neutral" type="button" outline to="/farmers" tag={Link}>
+              {/* <Link to="/farmers"> */}
               Get started
+              {/* </Link> */}
             </Button>
           </div>
         </Container>

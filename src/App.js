@@ -20,6 +20,8 @@ import AdminLogin from './components/FinancialInstitution/Login/AdminLogin';
 import AdminDashboard from './components/FinancialInstitution/Dashboard/AdminDashboard';
 import LoanStatistics from './components/FinancialInstitution/LoanStatistics/LoanStatistics';
 import ClientRecords from './components/FinancialInstitution/ClientsRecords/ClientRecords';
+import ContactMain from './components/Contact/ContactMain';
+import AboutMain from './components/AboutUs/AboutMain';
 
 
 function App() {
@@ -31,6 +33,9 @@ function App() {
         {/* landingpage */}
         <Route exact path="/" element={<LandingIndex />} />
         <Route path='/farmers' element={<FarmerIndex />} />
+        <Route path='/contact' element={<ContactMain />} />
+        <Route path='/about' element={<AboutMain />} />
+        
         {/* offftakers */}
         <Route path='/offtaker-login' element={<Login />} />
         <Route path='/offtaker-dashboard' element={<Dashboard />} />

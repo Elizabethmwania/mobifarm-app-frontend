@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Link } from "react-router-dom";
 
 import classnames from "classnames";
@@ -15,8 +16,8 @@ import {
   Button
 } from "reactstrap";
 
-const FarmerNavBar = () => {
-  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+const AboutNav = () => {
+    const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
   const toggleNavbarCollapse = () => {
@@ -44,8 +45,9 @@ const FarmerNavBar = () => {
       window.removeEventListener("scroll", updateNavbarColor);
     };
     });
+  
     return (
-    <Navbar
+        <Navbar
       className={classnames("fixed-top", navbarColor)}
       color-on-scroll="300"
       expand="lg"
@@ -90,14 +92,14 @@ const FarmerNavBar = () => {
             </NavItem>
             <NavItem>
               <NavLink>
-                Farmers
+                About Us
               </NavLink>
             </NavItem>
           </Nav>
         </Collapse>
       </Container>
     </Navbar>
-  );
-}
+    );
+};
 
-export default FarmerNavBar;
+export default AboutNav;

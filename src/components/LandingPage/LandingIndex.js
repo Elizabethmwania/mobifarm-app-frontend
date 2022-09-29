@@ -8,7 +8,7 @@ import Header from './Header';
 import LandingNavbar from './LandingNavbar';
 import Content from './Content';
 import Trainers from './Trainers';
-import Footer from './Footer';
+import Footer from '../Common/Footer';
 import Feature from './Feature';
 
 const LandingIndex = () => {

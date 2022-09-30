@@ -5,6 +5,7 @@ import Header from '../Header';
 import MainContainer from './MainContainer';
 import OfftakerNavbar from '../OfftakerNavbar';
 import SideNav from '../SideNav';
+
 const Dashboard = () => {
     return (
         <>
@@ -14,7 +15,10 @@ const Dashboard = () => {
         <OfftakerNavbar />
         <MainContainer />
         </div>
+        
         </div>
+
+        
         <Footer />
         </>
     );

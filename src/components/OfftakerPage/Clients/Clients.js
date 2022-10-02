@@ -14,10 +14,10 @@ const Clients = () => {
             <div class="container-fluid page-body-wrapper">
             <OfftakerNavbar />
             <div className='col-lg-12 grid-margin stretch-card'
-            style={{ paddingTop:80 }}>
-                <div className='card'>
+            style={{ paddingTop:100 }}>
+                {/* <div className='card'> */}
                     <FarmersDebts />
-                </div>
+                {/* </div> */}
             </div>
             
 

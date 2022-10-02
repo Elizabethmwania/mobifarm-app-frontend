@@ -28,23 +28,19 @@ const ContactForm = () => {
                     <Col md="6">
                       <label>Name</label>
                       <InputGroup>
-                        {/* <InputGroupAddon addonType="prepend"> */}
                           <InputGroupText>
-                            <i className="nc-icon nc-single-02" />
+                            <span><i className="fa fa-user icon" /></span>
                           </InputGroupText>
-                        {/* </InputGroupAddon> */}
-                        <Input placeholder="Name" type="text" />
+                        <input placeholder="Name" className='form-control' />
                       </InputGroup>
                     </Col>
                     <Col md="6">
                       <label>Email</label>
                       <InputGroup>
-                        {/* <InputGroupAddon addonType="prepend"> */}
                           <InputGroupText>
-                            <i className="nc-icon nc-email-85" />
+                            <span><i className="fa fa-envelope" /></span>
                           </InputGroupText>
-                        {/* </InputGroupAddon> */}
-                        <Input placeholder="Email" type="text" />
+                        <input placeholder="Email" className='form-control' />
                       </InputGroup>
                     </Col>
                   </Row>

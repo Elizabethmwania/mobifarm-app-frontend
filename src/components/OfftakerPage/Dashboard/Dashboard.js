@@ -14,6 +14,7 @@ const Dashboard = () => {
         <div class="container-fluid page-body-wrapper">
         <OfftakerNavbar />
         <MainContainer />
+        
         </div>
         
         </div>

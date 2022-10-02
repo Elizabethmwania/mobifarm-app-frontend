@@ -18,7 +18,15 @@ import {
 
   } from "reactstrap";
 
-const LandingNavbar = () => {
+  const linkStyle = {
+    textDecoration: 'none',
+    color: '#66615b',
+    fontSize: 16,
+    fontWeight: 500,
+    padding: '10px 45px 10px 15px'
+  }
+
+  const LandingNavbar = () => {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
@@ -82,7 +90,7 @@ const LandingNavbar = () => {
             navbar
             isOpen={navbarCollapse}
           >
-            <Nav navbar>
+            <Nav navbar style={{paddingTop: 30}}>
               <NavItem>
               {/* <NavItem> */}
               <NavLink to="/" tag={Link}>
@@ -122,30 +130,30 @@ const LandingNavbar = () => {
                         <DropdownItem
                           onClick={(e) => e.preventDefault()}
                           >
-                
-                          <Link to="/farmers">
+                          <Link to="/farmers" style={linkStyle}>
                             Farmers
                           </Link>
                         </DropdownItem>
                         <DropdownItem
                           onClick={(e) => e.preventDefault()}
-                           tag={Link} color="link">
-                          <Link to="/offtaker-login">
-                          Offtakers
+                        >
+                          <Link to="/offtaker-login" style={linkStyle}>
+                            Offtakers
                           </Link>  
                         </DropdownItem>
                         <DropdownItem
                           onClick={(e) => e.preventDefault()}
-                          to="/dealers-login" tag={Link}>
-                            <Link to="/dealers-login">
+                        >
+                          <Link to="/dealers-login" style={linkStyle}>
                             Agro Dealers
-                            </Link>
-                          
+                          </Link> 
                         </DropdownItem>
                         <DropdownItem
                           onClick={(e) => e.preventDefault()}
-                          to="/admin-login" tag={Link}>
-                            Financial Institution
+                          >
+                            <Link to="/admin-login" style={linkStyle}>
+                              Financial Institution
+                            </Link> 
                         </DropdownItem>
                        
                       </DropdownMenu>

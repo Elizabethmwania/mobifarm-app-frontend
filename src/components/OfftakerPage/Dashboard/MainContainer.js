@@ -5,11 +5,11 @@ import FarmersDebts from './FarmersDebts';
 
 const MainContainer = () => {
     return (
-        <div class="col-lg-12 grid-margin stretch-card"
-        style={{ paddingTop: 100 }}>
-                <div class="card">
+        <div class="col-lg-12 stretch-card"
+        style={{ paddingTop: 115}}>
+                <div class="card" style={{ border:'none', boxShadow:'none' }}>
                     <div class="row">
-                        <div class="col-xl-4 col-sm-6 grid-margin stretch-card">
+                        <div class="col-xl-4 col-sm-6 stretch-card">
                             <div class="card">
                                 <div class="card-body">
                                     <h5>All Farmers</h5>
@@ -26,7 +26,7 @@ const MainContainer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-sm-6 grid-margin stretch-card">
+                        <div class="col-xl-4 col-sm-6 stretch-card">
                             <div class="card">
                                 <div class="card-body">
                                     <h5>Borrowed Items</h5>
@@ -43,7 +43,7 @@ const MainContainer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-sm-6 grid-margin stretch-card">
+                        <div class="col-xl-4 col-sm-6 stretch-card">
                             <div class="card">
                                 <div class="card-body">
                                     <h5>Balances</h5>
@@ -63,7 +63,8 @@ const MainContainer = () => {
                     </div>
                     <FarmersDebts />
                 </div>
-            </div>
+                
+             </div>
 
      );
 };

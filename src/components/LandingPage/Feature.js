@@ -24,7 +24,7 @@ const Feature = () => {
                   </div>
                   <div className="description">
                     <h4 className="info-title">Register</h4>
-                    <p className="description">
+                    <p className="description" style={{fontWeight:500}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
@@ -39,7 +39,7 @@ const Feature = () => {
                   </div>
                   <div className="description">
                     <h4 className="info-title">Train</h4>
-                    <p>
+                    <p style={{fontWeight:500}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
@@ -53,7 +53,7 @@ const Feature = () => {
                   </div>
                   <div className="description">
                     <h4 className="info-title">Loan</h4>
-                    <p>
+                    <p style={{fontWeight:500}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
@@ -67,7 +67,7 @@ const Feature = () => {
                   </div>
                   <div className="description">
                     <h4 className="info-title">Market</h4>
-                    <p>
+                    <p style={{fontWeight:500}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     </p>

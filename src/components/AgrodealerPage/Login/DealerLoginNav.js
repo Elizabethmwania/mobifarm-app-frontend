@@ -77,7 +77,7 @@ const DealerLoginNav = () => {
           navbar
           isOpen={navbarCollapse}
         >
-          <Nav navbar>
+          <Nav navbar style={{paddingTop:30}}>
             <NavItem>
               <NavLink to="/" tag={Link}>
                 <i className="nc-icon nc-layout-11" /> Home

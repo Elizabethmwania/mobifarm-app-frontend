@@ -35,6 +35,7 @@ const Header = () => {
             </h3>
             <br />
             <Button
+              style={{color:'white', border:'1px solid white',borderRadius:'20px'}}
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
               className="btn-round mr-1"
               color="neutral"
@@ -45,7 +46,9 @@ const Header = () => {
               Watch video
             </Button>
             &nbsp;&nbsp;
-            <Button className="btn-round" color="neutral" type="button" outline to="/farmers" tag={Link}>
+            <Button 
+            style={{color:'white', border:'1px solid white',borderRadius:'20px'}}
+            className="btn-round" color="neutral" type="button" outline to="/farmers" tag={Link}>
               {/* <Link to="/farmers"> */}
               Get started
               {/* </Link> */}

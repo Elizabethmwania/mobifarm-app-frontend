@@ -69,9 +69,9 @@ const FileUpload = () => {
 
     // });
     return (
-        <div class="col-lg-12 grid-margin stretch-card" style={{ paddingTop:100}}>
-                <div class="card">
-                    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="col-lg-12 grid-margin stretch-card" style={{ paddingTop:115}}>
+                <div class="card" style={{ border:'none', boxShadow:'none' }}>
+                    <div class="col-lg-12 stretch-card">
                         <div class="container">
                             <div class="card">
                                 <div class="card-header">

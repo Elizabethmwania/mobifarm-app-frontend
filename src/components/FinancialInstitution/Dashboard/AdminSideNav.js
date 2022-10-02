@@ -28,7 +28,7 @@ const AdminSideNav = () => {
                     </Link>
                 </li>
                 <li class="nav-item menu-items">
-                    <Link to='/dealers-loans'
+                    <Link to='/create-client'
                     className="nav-link" >
                         <span class="menu-icon">
                             <i class="mdi mdi-table-large"></i>

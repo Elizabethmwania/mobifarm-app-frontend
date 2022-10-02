@@ -4,7 +4,6 @@ import { Container,Row,Col,Card,CardBody,CardTitle,CardFooter,Button } from 'rea
 import trainer1 from '../../img/trainers/trainer1.png';
 import trainer2 from '../../img/trainers/trainer2.png';
 import trainer3 from '../../img/trainers/trainer3.png';
-import trainer4 from '../../img/trainers/trainer4.png';
 
 const Trainers = () => {
     return (
@@ -25,11 +24,13 @@ const Trainers = () => {
                     <CardBody>
                         <a href="#" onClick={(e) => e.preventDefault()}>
                         <div className="author">
-                            <CardTitle tag="h4">Cate Michael</CardTitle>
+                            {/* <CardTitle> */}
+                                <h5>Cate Michael</h5>  
+                            {/* </CardTitle> */}
                             <h6 className="card-category">Poultry Farming</h6>
                         </div>
                         </a>
-                        <p className="card-description text-center">
+                        <p className="card-description text-center" style={{fontWeight:500}}>
                         Lorem ipsum dolor sit amet, consecte-tur adipiscing elit,
                         sed do eiusmod tem por incididunt.</p>
                     </CardBody>
@@ -74,11 +75,13 @@ const Trainers = () => {
                     <CardBody>
                         <a href="#" onClick={(e) => e.preventDefault()}>
                         <div className="author">
-                            <CardTitle tag="h4">Grace Ford</CardTitle>
+                            {/* <CardTitle tag="h4"> */}
+                                <h5>Grace Ford</h5>
+                            {/* </CardTitle> */}
                             <h6 className="card-category">Farm Management</h6>
                         </div>
                         </a>
-                        <p className="card-description text-center">
+                        <p className="card-description text-center" style={{fontWeight:500}}>
                         Lorem ipsum dolor sit amet, consecte-tur adipiscing elit,
                         sed do eiusmod tem por incididunt.
                         </p>
@@ -124,11 +127,13 @@ const Trainers = () => {
                     <CardBody>
                         <a href="#" onClick={(e) => e.preventDefault()}>
                         <div className="author">
-                            <CardTitle tag="h4">Henry Ford</CardTitle>
+                            {/* <CardTitle tag="h4"> */}
+                                <h5>Henry Ford </h5>
+                            {/* </CardTitle> */}
                             <h6 className="card-category">Animal Keeping</h6>
                         </div>
                         </a>
-                        <p className="card-description text-center">
+                        <p className="card-description text-center" style={{fontWeight:500}}>
                         Lorem ipsum dolor sit amet, consecte-tur adipiscing elit,
                         sed do eiusmod tem por incididunt.
                         </p>

@@ -22,6 +22,7 @@ import LoanStatistics from './components/FinancialInstitution/LoanStatistics/Loa
 import ClientRecords from './components/FinancialInstitution/ClientsRecords/ClientRecords';
 import ContactMain from './components/Contact/ContactMain';
 import AboutMain from './components/AboutUs/AboutMain';
+import Main from './components/FinancialInstitution/ClientRegistration/Main';
 
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
         <Route path='/admin-dashboard' element={<AdminDashboard />} />
         <Route path='/loans-statistics' element={<LoanStatistics />} />
         <Route path='/farmers-records' element={<ClientRecords />} />
+        <Route path='/create-client' element={<Main />} />
        
        
       </Routes>

@@ -11,8 +11,21 @@ import {
   NavLink,
   Nav,
   Container,
-  Badge
+  Badge,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  Row
 } from "reactstrap";
+
+const linkStyle = {
+  textDecoration: 'none',
+  color: '#66615b',
+  // padding: '10px 45px 10px 15px'
+  // fontSize: 16,
+  // fontWeight: 500,
+}
 
 const OfftakerNavbar = () => {
     const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
@@ -74,32 +87,23 @@ const OfftakerNavbar = () => {
                 <span className="navbar-toggler-bar bar2" />
                 <span className="navbar-toggler-bar bar3" />
               </button>
+              
             </div>
             <Collapse
               className="justify-content-end"
               navbar
               isOpen={navbarCollapse}
             >
-              <Nav navbar>
-                <NavItem>
-                {/* <NavItem> */}
-                <NavLink to="/" tag={Link}>
-                <i className="fa fa-envelope" size="lg" />
-                <span class="count bg-danger"></span>
+              <Nav navbar style={{paddingTop:30}}>
+                
+              <NavItem>
+                <NavLink  tag={Link}>
+                <i className="mdi mdi-bell" style={{fontSize:25}}   />
+                {/* <span class="count bg-danger" style={{borderRadious:50}}>0</span> */}
                 
                 </NavLink>
               </NavItem>
-                <NavItem>
-                <NavLink to="/about" tag={Link}>
-                  <i className="mdi mdi-email" /> About Us
-                </NavLink>
-                </NavItem>
-                <NavItem>
-                <NavLink to="/contact" tag={Link}>
-                  <i className="nc-icon nc-layout-11" /> Contact
-                </NavLink>
-              </NavItem>
-                {/* <UncontrolledDropdown nav inNavbar>
+              <UncontrolledDropdown nav inNavbar>
                         <DropdownToggle
                           aria-expanded={false}
                           aria-haspopup={true}
@@ -112,51 +116,37 @@ const OfftakerNavbar = () => {
                           onClick={(e) => e.preventDefault()}
                           role="button"
                         >
-                          Individuals
+                          <i className="mdi mdi-account" style={{fontSize:25}}   />
                         </DropdownToggle>
                         <DropdownMenu
                           aria-labelledby="dropdownMenuButton"
                           className="dropdown-info"
                         >
                           
+                          <DropdownItem header tag="span">
+                              <p class="p-3 mb-0" style={{fontWeight:500}}>Profile</p>
+                              <div class="dropdown-divider"></div>
+                            
+                          </DropdownItem>
+                          <DropdownItem
+                            onClick={(e) => e.preventDefault()}
+                             tag={Link} color="link"
+                          >
+                            
+                            <Link style={linkStyle}>
+                            <i class="mdi mdi-settings text-success"></i>Settings
+                            </Link> 
+                          </DropdownItem>
                           <DropdownItem
                             onClick={(e) => e.preventDefault()}
                             >
-                  
-                            <Link to="/farmers">
-                              Farmers
-                            </Link>
-                          </DropdownItem>
-                          <DropdownItem
-                            onClick={(e) => e.preventDefault()}
-                             tag={Link} color="link">
-                            <Link to="/offtaker-login">
-                            Offtakers
+                            <Link to="/offtaker-login" style={linkStyle}>
+                            <i class="mdi mdi-logout text-danger"></i>
+                               Logout 
                             </Link>  
                           </DropdownItem>
-                          <DropdownItem
-                            onClick={(e) => e.preventDefault()}
-                            to="/dealers-login" tag={Link}>
-                            Agro Dealers
-                          </DropdownItem>
-                          <DropdownItem
-                            onClick={(e) => e.preventDefault()}
-                            to="/admin-login" tag={Link}>
-                              Financial Institution
-                          </DropdownItem>
-                         
                         </DropdownMenu>
-                      </UncontrolledDropdown>
-                 */}
-                {/* <NavItem>
-                  <Button
-                    className="btn-round"
-                    color="danger"
-                  >
-                    <i className="nc-icon nc-spaceship"></i> Call Now! <br/> +254734246801
-                  </Button>
-                </NavItem> */}
-                
+                  </UncontrolledDropdown>
               </Nav>
             </Collapse>
           </Container>

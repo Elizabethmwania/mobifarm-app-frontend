@@ -4,7 +4,7 @@ import Pagination from '../../Common/Pagination';
 const FarmersDebts = () => {
     return (
         <div className='card-body'>
-            <h4 className='card-title'>Farmers Debts</h4>
+            <h4 style={{padding:30, color:'black;'}}>Farmers Payments</h4>
             <div className='table-responsive'>
                 <table className='table table-light'>
                     <tr>

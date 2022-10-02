@@ -80,7 +80,7 @@ const Login = () => {
         <Container>
           <Row>
             <Col className="mx-auto" lg="4" md="6">
-              <Card className="card-register">
+              <Card className="card-register ml-auto mr-auto" style={{backgroundColor:'#FF8F5E'}}>
                 <h3 className="title mx-auto">Offtaker Login</h3>
                 
                 <Form className="register-form" onSubmit={handleSubmit}>

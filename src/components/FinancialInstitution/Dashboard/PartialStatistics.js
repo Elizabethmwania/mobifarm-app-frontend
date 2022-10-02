@@ -1,4 +1,5 @@
 import React from 'react';
+import { BarGraph } from '../../AgrodealerPage/Canvas/BarGraph';
 
 const PartialStatistics = () => {
     return (
@@ -53,7 +54,7 @@ const PartialStatistics = () => {
                                             </select>
                                         </div> 
                                     </div> 
-                                    <canvas id="barChart" style={{height:230}}></canvas>
+                                    <BarGraph />
                                 </div>
 
                             </div>

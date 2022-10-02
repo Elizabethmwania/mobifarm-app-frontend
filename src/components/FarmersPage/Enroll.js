@@ -9,7 +9,7 @@ const Enroll = () => {
           <Row>
             <Col className="ml-auto mr-auto text-center" md="8">
               <h2 className="title">How you benefit</h2>
-              <p className="description">
+              <p className="description" style={{fontWeight:500}}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
               exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -29,7 +29,7 @@ const Enroll = () => {
           <Row className="text-center upgrade-pro">
             <Col className="ml-auto mr-auto" md="8">
               <h2 className="title">Want to know more?</h2>
-              <p className="description">
+              <p className="description" style={{fontWeight:500}}>
               Lorem ipsum dolor sit amet{" "}
                 <a className="text-danger" href="">
                   Mobifarm
@@ -47,7 +47,7 @@ const Enroll = () => {
           </Row>
           <Row className="justify-content-md-center sharing-area text-center">
             <Col className="text-center" lg="8" md="12">
-              <h3>Be updated!</h3>
+              {/* <h3>Be updated!</h3> */}
             </Col>
             <Col className="text-center" lg="8" md="12">
               <Button
@@ -88,7 +88,7 @@ const Enroll = () => {
               </UncontrolledTooltip>
               <Button
                 className="sharrre btn-round ml-2"
-                color="instagram-bg"
+                color="google-bg"
                 href=""
                 target="_blank"
                 id="tooltip864353654"

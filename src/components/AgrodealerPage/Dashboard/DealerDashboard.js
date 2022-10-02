@@ -14,7 +14,7 @@ const DealerDashboard = () => {
 
             <div className='container-fluid page-body-wrapper'>
                 <DealerNav />
-                <div className='main-panel' style={{paddingTop:100}}>
+                <div className='main-panel' style={{paddingTop:115}}>
                 <DashboardContent />
                 <LoanTransaction />
                 <ClientTransactions />

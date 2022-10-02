@@ -30,7 +30,7 @@ export class PieChart extends Component {
 			}]
 		}
 		return (
-		<div>
+		<div style={{color:'white'}}>
 			<CanvasJSChart options = {options}
 				/* onRef={ref => this.chart = ref} */
 			/>

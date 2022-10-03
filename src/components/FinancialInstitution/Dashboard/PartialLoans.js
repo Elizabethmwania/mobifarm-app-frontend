@@ -5,7 +5,7 @@ const PartialLoans = () => {
         
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <div class="card bg-success">
+                            <div class="card">
                                 <div class="card-body">
                                     <h4 class="text-md">Paid Loans</h4>
                                     <span class="d-inline-block mb-4 text-sm text-secondary">Net worth</span>
@@ -28,7 +28,7 @@ const PartialLoans = () => {
                             </div> 
                         </div>
                         <div class="col-12 col-md-4">
-                            <div class="card bg-info">
+                            <div class="card">
                             <div class="card-body">
                                     <h4 class="text-md">Pending Loans</h4>
                                     <span class="d-inline-block mb-4 text-sm text-secondary">Net worth</span>
@@ -53,7 +53,7 @@ const PartialLoans = () => {
 
 
                         <div class="col-12 col-md-4">
-                            <div class="card bg-warning">
+                            <div class="card">
                             <div class="card-body">
                                     <h4 class="text-md">Overdue Loans</h4>
                                     <span class="d-inline-block mb-4 text-sm text-secondary">Net worth</span>

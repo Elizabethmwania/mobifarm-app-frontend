@@ -2,8 +2,8 @@ import React from 'react';
 
 const LoanCategories = () => {
     return (
-        <div class="col-md-6 grid-margin stretch-card">
-                            <div class="card">
+        <div class="col-md-4 grid-margin stretch-card">
+                            <div class="card" style={{border: '1px solid white'}}>
                                 <div class="card-body">
                                     <div class="d-flex flex-row justify-content-between">
                                         <h4 class="card-title mb-1">Loans Categories</h4>

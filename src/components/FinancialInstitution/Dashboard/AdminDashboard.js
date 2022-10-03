@@ -1,4 +1,5 @@
 import React from 'react';
+import BarGraph from '../../AgrodealerPage/Canvas/BarGraph';
 import Footer from '../../Common/Footer';
 import AdminLoginNav from '../Login/AdminLoginNav';
 import AdminNav from './AdminNav';
@@ -16,9 +17,10 @@ const AdminDashboard = () => {
 
             <div className='container-fluid page-body-wrapper'>
                 <AdminNav />
-                <div className='main-panel' style={{paddingTop:80}}>
+                <div className='main-panel' style={{paddingTop:115}}>
                 <PartialLoans /> 
                 <PartialStatistics />
+                {/* <BarGraph /> */}
                 <ClientsPayments />
                 </div>
             </div>

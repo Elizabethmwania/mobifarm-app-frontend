@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CanvasJSReact from '../../../canvasjs-3.6.7/canvasjs.react';
+
 //var CanvasJSReact = require('./canvasjs.react');
 // var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
@@ -22,7 +23,7 @@ export class BarGraph extends Component {
              }]
          }
         return (
-            <div>
+            <div style={{paddingTop:20}}>
                 <CanvasJSChart options = {options}
                     /* onRef = {ref => this.chart = ref} */
                 />

@@ -18,10 +18,6 @@ import {
   DropdownItem,
   Row
 } from "reactstrap";
-import face1 from '../../../img/faces/face1.jpg'
-import face2 from '../../../img/faces/face2.jpg'
-import face3 from '../../../img/faces/face3.jpg'
-import face15 from '../../../img/faces/face15.jpg'
 
 const linkStyle = {
     textDecoration: 'none',
@@ -32,7 +28,7 @@ const linkStyle = {
   }
 
 const DealerNav = () => {
-    const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
   const toggleNavbarCollapse = () => {

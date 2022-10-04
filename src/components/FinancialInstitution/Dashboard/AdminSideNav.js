@@ -10,7 +10,7 @@ const AdminSideNav = () => {
             </div>
             <ul class="nav">
                 <li class="nav-item menu-items">
-                    <Link to='/dealers-dashboard'
+                    <Link to='/admin-dashboard'
                     className="nav-link" >
                         <span class="menu-icon">
                             <i class="mdi mdi-speedometer"></i>
@@ -46,7 +46,7 @@ const AdminSideNav = () => {
                     </Link>
                 </li>
                 <li class="nav-item menu-items">
-                    <Link to='/dealers-loans'
+                    <Link to='/loans-statistics'
                     className="nav-link" >
                         <span class="menu-icon">
                             <i class="mdi mdi-file-document-box"></i>

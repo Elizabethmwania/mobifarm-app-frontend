@@ -13,7 +13,7 @@ const ClientRecords = () => {
 
             <div className='container-fluid page-body-wrapper'>
                 <AdminNav />
-                <div className='main-panel' style={{paddingTop:80}}>
+                <div className='main-panel' style={{paddingTop:115}}>
                 <ClientsPayments /> 
                 </div>
             </div>

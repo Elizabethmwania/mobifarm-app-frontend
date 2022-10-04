@@ -69,7 +69,7 @@ const AdminNav = () => {
             <div className="navbar-translate">
               <NavbarBrand
                 data-placement="bottom"
-                to="/"
+                to="/admin-dashboard"
                 target="_blank"
                 tag={Link}
               >

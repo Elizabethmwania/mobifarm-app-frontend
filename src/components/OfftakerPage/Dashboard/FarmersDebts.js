@@ -1,78 +1,126 @@
-import React from 'react';
-import Pagination from '../../Common/Pagination';
+import React, { useRef, useState, useEffect } from 'react';
+import Pagination from 'rc-pagination';
+import { offtakerClients } from '../../../Data/offtakerClients';
+import '../pagination.css';
+import cloneDeep from 'lodash/cloneDeep';
+import throttle from 'lodash/throttle';
 
+const tableHead = {
+    name: "Campaign Name",
+    clientId: "Campaign Id",
+    item: "Type",
+    amount: "Status",
+    status: "Channel",
+    id: "#"
+  };
+
+  
 const FarmersDebts = () => {
-    return (
-        <div className='card-body'>
-            <h4 style={{padding:30, color:'black;'}}>Farmers Payments</h4>
-            <div className='table-responsive'>
-                <table className='table table-light'>
-                    <tr>
-                        <th> # </th>
-                        <th> First name </th>
-                        <th> Progress </th>
-                        <th> Amount </th>
-                        <th> Deadline </th>
 
+    const countPerPage = 2;
+    const [value, setValue] = useState("");
+    const [currentPage, setCurrentPage] = useState(1);
+    const [collection, setCollection] = useState(
+        cloneDeep(offtakerClients.slice(0, countPerPage))
+     );
+    const searchData = useRef(
+    throttle(val => {
+      const query = val.toLowerCase();
+      setCurrentPage(1);
+      const data = cloneDeep(
+        offtakerClients
+          .filter(item => item.name.toLowerCase().indexOf(query) > -1)
+          .slice(0, countPerPage)
+      );
+      setCollection(data);
+    }, 400)
+  );
+
+    useEffect(() => {
+        if (!value) {
+        updatePage(1);
+        } else {
+        searchData.current(value);
+        }
+    }, [value]);
+
+    const updatePage = p => {
+        setCurrentPage(p);
+        const to = countPerPage * p;
+        const from = to - countPerPage;
+        setCollection(cloneDeep(offtakerClients.slice(from, to)));
+    };
+    const tableRows = rowData => {
+        const { key, index } = rowData;
+        const tableCell = Object.keys(tableHead);
+        const columnData = tableCell.map((keyD, i) => {
+          return <td key={i}>{key[keyD]}</td>;
+        });
+    
+        return <tr key={index}>{columnData}</tr>;
+      };
+    
+      const tableData = () => {
+        return collection.map((key, index) => tableRows({ key, index }));
+      };
+      const headRow = () => {
+        return Object.values(tableHead).map((title, index) => (
+          <td key={index}>{title}</td>
+        ));
+      };
+
+    return (
+        <>
+            <div class="table-search-form">
+                <input
+                placeholder="Search Campaign"
+                value={value}
+                onChange={e => setValue(e.target.value)}
+                />
+            </div> 
+            <div className='table-responsive'>
+                <table className='table table-text-small mb-0'> 
+                    {/* <thread className="thead-primary table-sorting"> */}
+                    <tr style={{backgroundColor:'#0f1015', color:'white'}}>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Gender</th>
+                        <th>Email</th>
+                        <th>Salary</th>
                     </tr>
+                    {/* </thread> */}
                     <tbody>
-                        <tr>
-                            <td> 1 </td>
-                            <td> Herman Beck </td>
-                            <td> 
-                                <div className='progress'>
-                                    <div className='progress-bar bg-success' role='progressbar' aria-valuenow='25' aria-valuemin='0'
-                                     aria-valuemax='100' style={{width:'70%'}}>
-                                    </div>
-                                </div>
-                            </td>
-                            <td> $ 77.99 </td>
-                            <td> May 15, 2023</td>
-                        </tr>
-                        <tr>
-                            <td> 2 </td>
-                            <td> Messy Adam </td>
-                            <td> 
-                                <div className='progress'>
-                                    <div className='progress-bar bg-danger' role='progressbar' aria-valuenow='25' aria-valuemin='0'
-                                     aria-valuemax='100' style={{width:'80%'}}>
-                                    </div>
-                                </div>
-                            </td>
-                            <td> $ 77.99 </td>
-                            <td> May 15, 2023</td>
-                        </tr>
-                        <tr>
-                            <td> 3 </td>
-                            <td> Luck Ritah </td>
-                            <td> 
-                                <div className='progress'>
-                                    <div className='progress-bar bg-primary' role='progressbar' aria-valuenow='50' aria-valuemin='0'
-                                     aria-valuemax='100' style={{width:'50%'}}>
-                                    </div>
-                                </div>
-                            </td>
-                            <td> $ 77.99 </td>
-                            <td> May 15, 2023</td>
-                        </tr>
-                        <tr>
-                            <td> 4 </td>
-                            <td> John Richards </td>
-                            <td> 
-                                <div className='progress'>
-                                    <div className='progress-bar bg-warning' role='progressbar' aria-valuenow='90' aria-valuemin='0'
-                                     aria-valuemax='100' style={{width:'90%'}}>
-                                    </div>
-                                </div>
-                            </td>
-                            <td> $ 77.99 </td>
-                            <td> May 15, 2023</td>
-                        </tr>
+
+                        {
+                            collection.map((key, index) =>{
+                                return (
+                            <tr key={key.id}>
+                                {/* <td>{tableData()}</td> */}
+                                <td> {key.id} </td>
+                                <td> {key.name} </td>
+                                <td> {key.clientId} </td>
+                                <td> {key.item} </td>
+                                <td> {key.amount} </td>
+                                <td> {key.status} </td>
+                            </tr>
+                                )
+                           })
+                        }
                     </tbody>
                 </table>
             </div>
-            <Pagination />
-        </div>
+            <div  className="table-filter-info">
+                <Pagination
+                    className="pagination-data"
+                    pageSize={countPerPage}
+                    onChange={updatePage}
+                    current={currentPage}
+                    total={offtakerClients.length}
+                />
+            
+            </div>    
+        </>
     );
 };
 

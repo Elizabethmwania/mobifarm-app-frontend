@@ -1,83 +1,47 @@
 import React from 'react';
+import fetchData from '../../../utils/fetchData';
 //import './product.css'
 import product1 from '../../../img/products/Broccoli-florets.jpg'
+
 
 const productStyle = {
     container: {
         paddingTop: 80,
     },
+    row: {
+        display: 'flex',
+        alignItems: 'stretch',
+        justifyContent: 'center',
+
+    }
 }
 
+const apiData = fetchData('https://dog.ceo/api/breeds/image/random/50')
+
 const ProductList = () => {
+    const data = apiData.read();
     return (
         <div className='container mt-5' style={productStyle.container}>
             <div className='row'>
-                    <div class="col-md-4">
+                    <div class="col-md-12">
                         <div class="card">
                             <div class="image-container">
 
-                                <img src={product1} class="img-fluid rounded thumbnail-image" />
+                                {data.map((item, index) => (
+                                <img style={{float:'left', margin:'1px', padding:'10px 3px', height:'100px', width:'100px'}}
+                                    alt={`gallery-img-${index + 1}`}
+                                    src={item}
+                                    key={`gallery-${index + 1}`}
+                                />
+                                 ))} 
+                               
                             </div>
-                            <div class="product-detail-container p-2">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="dress-name">Product: Broccoli <br /> User ID: 00134
-                                    </p>
-                                    <div class="d-flex flex-column mb-2">
-                                        <span class="new-price">Ksh9,900</span>
-                                        <small class="old-price text-right">per sack</small>
-                                    </div>
-                                </div>
-                                <div class="voutcher-right text-center border-left">
-                                    <h5 class="discount-percent">Send</h5>
-                                    <span class="off">Request</span>
-                                </div>
-                            </div>
+                            
                         </div>
+                        {/* </div> */}
+                            
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="image-container">
 
-                                <img src={product1} class="img-fluid rounded thumbnail-image" />
-                            </div>
-                            <div class="product-detail-container p-2">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="dress-name">Product: Broccoli <br /> User ID: 00134
-                                    </p>
-                                    <div class="d-flex flex-column mb-2">
-                                        <span class="new-price">Ksh9,900</span>
-                                        <small class="old-price text-right">per sack</small>
-                                    </div>
-                                </div>
-                                <div class="voutcher-right text-center border-left">
-                                    <h5 class="discount-percent">Send</h5>
-                                    <span class="off">Request</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="image-container">
-
-                                <img src={product1} class="img-fluid rounded thumbnail-image" />
-                            </div>
-                            <div class="product-detail-container p-2">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="dress-name">Product: Broccoli <br /> User ID: 00134
-                                    </p>
-                                    <div class="d-flex flex-column mb-2">
-                                        <span class="new-price">Ksh9,900</span>
-                                        <small class="old-price text-right">per sack</small>
-                                    </div>
-                                </div>
-                                <div class="voutcher-right text-center border-left">
-                                    <h5 class="discount-percent">Send</h5>
-                                    <span class="off">Request</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
             </div>
             
         </div>

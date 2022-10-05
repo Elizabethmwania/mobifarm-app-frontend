@@ -21,8 +21,8 @@ const ClientTransactions = () => {
         </div>
         <div className='row'>
             <div className='col-md-12 stretch-card'>
-                <div className='card' style={{ border:'none', boxShadow:'none' }} >
-                    <div className='card-body'>
+                {/* <div className='card' style={{ border:'none', boxShadow:'none' }} >
+                    <div className='card-body'> */}
                         <div className='table-responsive'>
                             <table className='table table-light'>
                                 {/* <thread> */}
@@ -116,8 +116,8 @@ const ClientTransactions = () => {
                                 {/* </thread> */}
                             </table>
                         </div>
-                    </div>
-                </div>
+                    {/* </div>
+                </div> */}
             </div>
 
         </div>

@@ -71,13 +71,14 @@ const FarmersDebts = () => {
 
     return (
         <>
-            <div class="table-search-form">
+          <div className='row'>
+          <h4>Clients Transactions</h4>
                 <input
                 placeholder="Search Campaign"
                 value={value}
                 onChange={e => setValue(e.target.value)}
                 />
-            </div> 
+          </div>  
             <div className='table-responsive'>
                 <table className='table table-text-small mb-0'> 
                     {/* <thread className="thead-primary table-sorting"> */}

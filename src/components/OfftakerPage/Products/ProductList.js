@@ -24,7 +24,7 @@ const ProductList = () => {
         <div className='container mt-5' style={productStyle.container}>
             <div className='row'>
                     <div class="col-md-12">
-                        <div class="card">
+                        <div class="card" style={{ border:'none', boxShadow:'none' }}>
                             <div class="image-container">
 
                                 {data.map((item, index) => (

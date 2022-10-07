@@ -5,6 +5,19 @@ import '../pagination.css';
 import cloneDeep from 'lodash/cloneDeep';
 import throttle from 'lodash/throttle';
 
+import './table.css';
+
+const tableStyle = {
+  ul: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    paddingLeft: 20,
+    listStyle: 'none'
+
+  }
+
+}
+
 const tableHead = {
     name: "Campaign Name",
     clientId: "Campaign Id",
@@ -71,15 +84,23 @@ const FarmersDebts = () => {
 
     return (
         <>
-          <div className='row'>
-          <h4>Clients Transactions</h4>
+            <div className='table-row' >
+              <ul>
+                <li>
+                <h4>Clients Transactions</h4>
+                </li>
+                <li>
                 <input
-                placeholder="Search Campaign"
+                className='form-control'
+                style={{width:'50%'}}
+                placeholder="Search Name"
                 value={value}
                 onChange={e => setValue(e.target.value)}
                 />
-          </div>  
-            <div className='table-responsive'>
+                </li>
+              </ul>
+            </div>  
+            <div className='table-responsive' style={{paddingTop:20}}>
                 <table className='table table-text-small mb-0'> 
                     {/* <thread className="thead-primary table-sorting"> */}
                     <tr style={{backgroundColor:'#0f1015', color:'white'}}>

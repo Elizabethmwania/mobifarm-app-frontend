@@ -15,9 +15,13 @@ const Clients = () => {
             <OfftakerNavbar />
             <div className='col-lg-12 grid-margin stretch-card'
             style={{ paddingTop:100 }}>
+                <div class="card" style={{ border:'none', boxShadow:'none' }}>
+
+                
                 {/* <div className='card'> */}
                     <FarmersDebts />
                 {/* </div> */}
+                </div>
             </div>
             
 

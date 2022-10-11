@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import Footer from '../../Common/Footer';
 import OfftakerNavbar from '../OfftakerNavbar';
 import SideNav from '../SideNav';
+import ListProducts from './ListProducts';
 import ProductList from './ProductList';
 import ProductsApi from './ProductsApi';
 
@@ -12,11 +13,12 @@ const Products = () => {
         <SideNav />
         <div class="container-fluid page-body-wrapper">
         <OfftakerNavbar />
-        <Suspense fallback= {<h1>Products LOading</h1>}>
+        {/* <Suspense fallback= {<h1>Products LOading</h1>}> */}
             {/* <ProductsApi /> */}
         
-        <ProductList />
-        </Suspense>
+        {/* <ProductList />
+        </Suspense> */}
+        <ListProducts/>
         </div>
         </div>
         <Footer />

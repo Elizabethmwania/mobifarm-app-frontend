@@ -1,10 +1,10 @@
 import React from 'react';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 const Pagination = () => {
     return (
-        <div class="d-flex mt-4 flex-wrap">
+        <div className="d-flex mt-4 flex-wrap">
                             <p class="text-muted">Showing 1 to 10 of 57 entries</p>
-                            <nav class="ml-auto">
+                            <nav className="ml-auto">
                                 <ul class="pagination separated pagination-info">
                                     <li class="page-item"><a href="#" class="page-link"><i
                                                 class="icon-arrow-left" style={{color:'black'}}></i></a></li>

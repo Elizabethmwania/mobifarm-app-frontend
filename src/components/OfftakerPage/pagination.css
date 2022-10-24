@@ -1,3 +1,8 @@
+.table-row{
+   padding-top: 30px;
+   display: flex;
+   justify-content: space-between;
+}
 .table-search-form{
     display: block;
     float: right;
@@ -15,10 +20,11 @@
 .table-search-form:focus {
     color: #475f7b;
     background-color: #fff;
-    border-color: #5a8dee;
+    border-color: #15eb20;
     outline: 0;
     box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
 }
+
 /* .card {
     box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
    background-color: #fff;

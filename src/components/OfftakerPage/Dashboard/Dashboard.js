@@ -1,10 +1,10 @@
 import React from 'react';
-import FarmersDebts from '../Dashboard/FarmersDebts';
 import Footer from '../../Common/Footer';
-import Header from '../Header';
 import MainContainer from './MainContainer';
 import OfftakerNavbar from '../OfftakerNavbar';
 import SideNav from '../SideNav';
+import ListProducts from '../Products/ListProducts';
+import SomeProducts from '../Products/SomeProducts';
 
 const Dashboard = () => {
     return (
@@ -14,11 +14,8 @@ const Dashboard = () => {
         <div class="container-fluid page-body-wrapper">
         <OfftakerNavbar />
         <MainContainer />
-        
         </div>
-        
         </div>
-
         
         <Footer />
         </>

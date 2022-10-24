@@ -6,7 +6,7 @@ const LoanCategories = () => {
                             <div class="card" style={{border: '1px solid white'}}>
                                 <div class="card-body">
                                     <div class="d-flex flex-row justify-content-between">
-                                        <h4 class="card-title mb-1">Loans Categories</h4>
+                                        <h4 class="card-title mb-1">Loan Categories</h4>
                                     </div>
                                     <div class="row">
                                         <div class="col-12">

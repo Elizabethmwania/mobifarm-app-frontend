@@ -9,7 +9,7 @@ export class BarGraph extends Component {
     render() {
         const options = {
             title: {
-              text: "Loans Disbursements "
+              text: "Loan Disbursements "
             },
             data: [{				
                       type: "column",

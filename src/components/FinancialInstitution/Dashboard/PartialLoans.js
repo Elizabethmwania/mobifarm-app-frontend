@@ -5,7 +5,7 @@ const PartialLoans = () => {
         
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <div class="card">
+                            <div class="card" style={{backgroundColor:'#a8e063'}}>
                                 <div class="card-body">
                                     <h4 class="text-md">Paid Loans</h4>
                                     <span class="d-inline-block mb-4 text-sm text-secondary">Net worth</span>
@@ -19,16 +19,16 @@ const PartialLoans = () => {
                                     </div> 
                                 </div> 
                                 <div class="px-1 py-1">
-                                    <a href=""
+                                    {/* <a href=""
                                         class="btn btn-text btn-secondary btn-block d-flex align-items-center justify-content-between">
                                         View
                                         <i class="zmdi zmdi-arrow-right ml-1 icon" aria-hidden="true"></i>
-                                    </a>
+                                    </a> */}
                                 </div> 
                             </div> 
                         </div>
                         <div class="col-12 col-md-4">
-                            <div class="card">
+                            <div class="card" style={{backgroundColor:' #d6ae7b'}}>
                             <div class="card-body">
                                     <h4 class="text-md">Pending Loans</h4>
                                     <span class="d-inline-block mb-4 text-sm text-secondary">Net worth</span>
@@ -42,18 +42,14 @@ const PartialLoans = () => {
                                     </div> 
                                 </div> 
                                 <div class="px-1 py-1">
-                                    <a href=""
-                                        class="btn btn-text btn-secondary btn-block d-flex align-items-center justify-content-between">
-                                        View
-                                        <i class="zmdi zmdi-arrow-right ml-1 icon" aria-hidden="true"></i>
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </div> 
 
 
                         <div class="col-12 col-md-4">
-                            <div class="card">
+                            <div class="card" style={{backgroundColor:'#ddd6f3'}}>
                             <div class="card-body">
                                     <h4 class="text-md">Overdue Loans</h4>
                                     <span class="d-inline-block mb-4 text-sm text-secondary">Net worth</span>
@@ -67,11 +63,7 @@ const PartialLoans = () => {
                                     </div> 
                                 </div> 
                                 <div class="px-1 py-1">
-                                    <a href=""
-                                        class="btn btn-text btn-secondary btn-block d-flex align-items-center justify-content-between">
-                                        View
-                                        <i class="zmdi zmdi-arrow-right ml-1 icon" aria-hidden="true"></i>
-                                    </a>
+                                    
                                 </div> 
                             </div> 
                         </div> 

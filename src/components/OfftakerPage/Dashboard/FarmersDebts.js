@@ -4,19 +4,7 @@ import { offtakerClients } from '../../../Data/offtakerClients';
 import '../pagination.css';
 import cloneDeep from 'lodash/cloneDeep';
 import throttle from 'lodash/throttle';
-
-import './table.css';
-
-const tableStyle = {
-  ul: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    paddingLeft: 20,
-    listStyle: 'none'
-
-  }
-
-}
+import SomeProducts from '../Products/SomeProducts';
 
 const tableHead = {
     name: "Campaign Name",
@@ -30,7 +18,7 @@ const tableHead = {
   
 const FarmersDebts = () => {
 
-    const countPerPage = 2;
+    const countPerPage = 5;
     const [value, setValue] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
     const [collection, setCollection] = useState(
@@ -84,21 +72,17 @@ const FarmersDebts = () => {
 
     return (
         <>
-            <div className='table-row' >
-              <ul>
-                <li>
-                <h4>Clients Transactions</h4>
-                </li>
-                <li>
+          <div className='table-row' >
+              
+                <h4>Clients Debts</h4>
+                
                 <input
                 className='form-control'
-                style={{width:'50%'}}
+                style={{width:'30%'}}
                 placeholder="Search Name"
                 value={value}
                 onChange={e => setValue(e.target.value)}
                 />
-                </li>
-              </ul>
             </div>  
             <div className='table-responsive' style={{paddingTop:20}}>
                 <table className='table table-text-small mb-0'> 
@@ -141,7 +125,7 @@ const FarmersDebts = () => {
                     total={offtakerClients.length}
                 />
             
-            </div>    
+            </div>  
         </>
     );
 };

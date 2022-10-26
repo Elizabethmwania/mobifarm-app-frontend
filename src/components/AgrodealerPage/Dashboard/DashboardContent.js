@@ -1,10 +1,12 @@
 import React from 'react';
+import { Container } from 'reactstrap';
 
 const DashboardContent = () => {
     return (
+        <Container>
         <div className='row'>
             <div className="col-xl-4 col-sm-6 grid-margin stretch-card">
-                        <div class="card bg-success">
+                        <div class="card" style={{backgroundColor:'#a8e063'}}>
                             <div class="card-body">
                                 <h5>Active Loans</h5>
                                 <div class="row">
@@ -21,7 +23,7 @@ const DashboardContent = () => {
                         </div>
                     </div>
                     <div class="col-xl-4 col-sm-6 grid-margin stretch-card">
-                        <div class="card bg-warning">
+                        <div class="card" style={{backgroundColor:' #d6ae7b'}}>
                             <div class="card-body">
                                 <h5>Pending Loans</h5>
                                 <div class="row">
@@ -38,7 +40,7 @@ const DashboardContent = () => {
                         </div>
                     </div>
                     <div class="col-xl-4 col-sm-8 grid-margin stretch-card">
-                        <div class="card bg-info">
+                        <div class="card" style={{backgroundColor:'#ddd6f3'}}>
                             <div class="card-body">
                                 <h5>All clients</h5>
                                 <div class="row">
@@ -56,6 +58,7 @@ const DashboardContent = () => {
                     </div>
             
         </div>
+        </Container>
     );
 };
 

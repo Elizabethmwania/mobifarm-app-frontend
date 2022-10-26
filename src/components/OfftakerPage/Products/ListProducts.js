@@ -7,10 +7,26 @@ const ListProducts = () => {
         {
             id: 1,
             name: "broccoli",
-            img: 'https:\/\/images.dog.ceo\/breeds\/retriever-curly\/n02099429_2934.jpg',
+            img: '',
             price: 2400,
             status: 'available',
-            seller: 10883677,
+            seller: 10883677
+        },
+        {
+            id: 1,
+            name: "broccoli",
+            img: '',
+            price: 2400,
+            status: 'available',
+            seller: 10883677
+        },
+        {
+            id: 1,
+            name: "broccoli",
+            img: '',
+            price: 2400,
+            status: 'available',
+            seller: 10883677
         },
         {
             id: 1,
@@ -26,7 +42,7 @@ const ListProducts = () => {
             img: '',
             price: 2400,
             status: 'available',
-            seller: 10883677,
+            seller: 10883677
         },
         {
             id: 1,
@@ -34,28 +50,20 @@ const ListProducts = () => {
             img: '',
             price: 2400,
             status: 'available',
-            seller: 10883677,
-        },
-        {
-            id: 1,
-            name: "broccoli",
-            img: '',
-            price: 2400,
-            status: 'available',
-            seller: 10883677,
-        },
-        {
-            id: 1,
-            name: "broccoli",
-            img: '',
-            price: 2400,
-            status: 'available',
-            seller: 10883677,
+            seller: 10883677
         }
     ]
     return (
-        <div className='products-container'>
-            <p>header</p>
+        <>
+        {/* <h1>products</h1> */}
+        <div className='products-container' style={{paddingTop:120}}>
+            {/* <div className='row'> */}
+            <div className='products-header'>
+                <h1>All Products</h1>
+                <input placeholder='Search Product' className='form-control'/>
+            </div>
+            {/* </div> */}
+        <div className='row'>    
         <div className='products'>
             {products.map (product => (
                 <div className='product' key={product.id}>
@@ -80,8 +88,10 @@ const ListProducts = () => {
                 </div>
             )) }
             
-        </div>    
+        </div>  
+        </div>  
         </div>
+        </>
     );
 };
 

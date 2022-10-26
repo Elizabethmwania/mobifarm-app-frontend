@@ -99,7 +99,6 @@ const OfftakerNavbar = () => {
               <NavItem>
                 <NavLink  tag={Link}>
                 <i className="mdi mdi-bell" style={{fontSize:25}}   />
-                {/* <span class="count bg-danger" style={{borderRadious:50}}>0</span> */}
                 
                 </NavLink>
               </NavItem>
@@ -121,10 +120,11 @@ const OfftakerNavbar = () => {
                         <DropdownMenu
                           aria-labelledby="dropdownMenuButton"
                           className="dropdown-info"
+                          style={{backgroundColor:'rgb(78, 231, 40)', border:'1px solid rgb(78, 231, 40)'}}
                         >
                           
                           <DropdownItem header tag="span">
-                              <p class="p-3 mb-0" style={{fontWeight:500}}>Profile</p>
+                              <h5 class="p-3 mb-0" style={{fontWeight:500}}>Profile</h5>
                               <div class="dropdown-divider"></div>
                             
                           </DropdownItem>

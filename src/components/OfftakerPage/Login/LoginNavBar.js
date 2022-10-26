@@ -9,7 +9,6 @@ import {
     NavLink,
     Nav,
     Container,
-    Button
   } from "reactstrap";
 
 const LoginNavBar = () => {

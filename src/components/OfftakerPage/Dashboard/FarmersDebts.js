@@ -4,8 +4,6 @@ import { offtakerClients } from '../../../Data/offtakerClients';
 import '../pagination.css';
 import cloneDeep from 'lodash/cloneDeep';
 import throttle from 'lodash/throttle';
-import SomeProducts from '../Products/SomeProducts';
-
 const tableHead = {
     name: "Campaign Name",
     clientId: "Campaign Id",
@@ -85,7 +83,7 @@ const FarmersDebts = () => {
                 />
             </div>  
             <div className='table-responsive' style={{paddingTop:20}}>
-                <table className='table table-text-small mb-0'> 
+                <table className='table'> 
                     {/* <thread className="thead-primary table-sorting"> */}
                     <tr style={{backgroundColor:'#0f1015', color:'white'}}>
                         <th>#</th>
@@ -95,7 +93,6 @@ const FarmersDebts = () => {
                         <th>Email</th>
                         <th>Salary</th>
                     </tr>
-                    {/* </thread> */}
                     <tbody>
 
                         {

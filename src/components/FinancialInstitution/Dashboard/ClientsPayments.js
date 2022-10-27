@@ -14,15 +14,15 @@ const ClientsPayments = () => {
                 {/* <div className='card'> */}
                     <div className='card-header d-block d-md-flex'>
                     <h5 class="mb-0">Loan Payments</h5>
-                    <p class="ml-auto mb-0">View all<i class="icon-bulb"></i></p>
+                    {/* <p class="ml-auto mb-0">View all<i class="icon-bulb"></i></p> */}
                     </div>
                 {/* </div> */}
 
             </div>
             <div className='row'>
                 <div className='table-responsive'>
-                    <table className='table table-light'>
-                                    <tr>
+                    <table className='table'>
+                                    <tr class="thead-dark">
                                         <th>Client ID</th>
                                         <th> Amount </th>
                                         <th> Gateway </th>
@@ -30,7 +30,7 @@ const ClientsPayments = () => {
                                         <th> Paid at </th>
                                         <th> Status </th>
                                     </tr>
-                                    <tbody>
+                                    <tbody style={{backgroundColor:'lightgray'}}>
                                         <tr>
                                             <td>
                                                 <img src={face15} alt='image'/>
@@ -116,7 +116,7 @@ const ClientsPayments = () => {
 
                     </table>
                 </div>
-                <Pagination />
+                {/* <Pagination /> */}
             </div>
         </>
     );

@@ -7,8 +7,6 @@ import {
     Card,
     Form,
     Input,
-    InputGroupAddon,
-    InputGroupText,
     InputGroup,
     Container,
     Row,
@@ -80,62 +78,30 @@ const AdminLogin = () => {
           <Container>
             <Row>
               <Col className="mx-auto" lg="4" md="6">
-                <Card className="card-register" style={{backgroundColor:'#FF8F5E'}}>
+                <Card className="card-register" style={{backgroundColor:'transparent', border:'1px solid white'}}>
                   <h3 className="title mx-auto">Admin Login</h3>
                   
                   <Form className="register-form" onSubmit={handleSubmit}>
                     <label>Account Name</label>
                     <InputGroup className="form-group-no-border">
-                      {/* <InputGroupAddon addonType="prepend">
-                        <InputGroupText>
-                          <i className="nc-icon nc-email-85" />
-                        </InputGroupText>
-                      </InputGroupAddon> */}
-                      <Input placeholder="Account Name" type="text" name='uname' required />
+                      <Input placeholder="Account Name" type="text" name='uname' required style={{height:'40px'}}/>
                       {renderErrorMessage("uname")}
                     </InputGroup>
                     <label>Password</label>
                     <InputGroup className="form-group-no-border">
-                      {/* <InputGroupAddon addonType="prepend">
-                        <InputGroupText>
-                          <i className="nc-icon nc-key-25" />
-                        </InputGroupText>
-                      </InputGroupAddon> */}
-                      <Input placeholder="Password" type="password" name='pass' required />
+                      <Input placeholder="Password" type="password" name='pass' required style={{height:'40px'}} />
                       {renderErrorMessage("pass")}
                     </InputGroup>
                     <Button
                       block
                       className="btn-round"
-                      color="danger"
+                      style={{backgroundColor:'rgb(78, 231, 40)'}}
                       type="submit"
                     >
                       LOGIN
                     </Button>
                   </Form>
-                  {/* <div className="forgot">
-                    <Button
-                      className="btn-link"
-                      color="danger"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      Forgot password?
-                    </Button>
-                  </div> */}
                 </Card>
-                {/* <div className="col text-center">
-                  <Button
-                    className="btn-round"
-                    outline
-                    color="neutral"
-                    href="/register-page"
-                    size="lg"
-                    target="_blank"
-                  >
-                    View Register Page
-                  </Button>
-                </div> */}
               </Col>
             </Row>
           </Container>

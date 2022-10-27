@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import classnames from "classnames";
 // reactstrap components
 import {
-  Button,
   Collapse,
   NavbarBrand,
   Navbar,
@@ -11,20 +10,15 @@ import {
   NavLink,
   Nav,
   Container,
-  Badge,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
-  Row
+  DropdownItem
 } from "reactstrap";
 
 const linkStyle = {
     textDecoration: 'none',
-    color: '#66615b',
-    // padding: '10px 45px 10px 15px'
-    // fontSize: 16,
-    // fontWeight: 500,
+    color: '#66615b'
   }
 
 const AdminNav = () => {
@@ -120,10 +114,11 @@ const AdminNav = () => {
                         <DropdownMenu
                           aria-labelledby="dropdownMenuButton"
                           className="dropdown-info"
+                          style={{backgroundColor:'rgb(78, 231, 40)', border:'none' }}
                         >
                           
                           <DropdownItem header tag="span">
-                              <p class="p-3 mb-0" style={{fontWeight:500}}>Profile</p>
+                              <h5 class="p-3 mb-0" style={{fontWeight:500, color:'white'}}>Profile</h5>
                               <div class="dropdown-divider"></div>
                             
                           </DropdownItem>

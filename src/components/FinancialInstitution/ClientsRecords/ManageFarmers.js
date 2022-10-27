@@ -47,15 +47,13 @@ function delete_row(no)
             <div class="table-responsive" id="wrapper">
 
             <table class="table" id="data_table">
-                <thead>
-                    <tr>
+                    <tr class="thead-dark">
                         <th class="font-weight-bold">First Name</th>
                         <th class="font-weight-bold">Last Name</th>
                         <th class="font-weight-bold">Acc Number</th>
                         <th class="font-weight-bold">Branch</th>
                         <th class="font-weight-bold">Manage</th>
                     </tr>
-                </thead>
                 <tbody>
                     <tr id="row1">
                         <td id="fname_row1">Agnes</td>

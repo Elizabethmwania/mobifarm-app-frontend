@@ -115,7 +115,10 @@ const ClientTransactions = () => {
                                 <td> {key.amount} </td>
                                 <td> {key.payment} </td>
                                 <td> {key.date} </td>
-                                <td> {key.status} </td>
+                                <td> 
+                                  {/* {key.status} </td> */}
+                                  <div className="badge badge-success p-2">Approved</div>
+                                </td>  
                                 <td>
                                     <input type='checkbox' />
                                 </td>

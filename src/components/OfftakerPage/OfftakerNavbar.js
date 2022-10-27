@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import classnames from "classnames";
 // reactstrap components
 import {
-  Button,
   Collapse,
   NavbarBrand,
   Navbar,
@@ -11,20 +10,15 @@ import {
   NavLink,
   Nav,
   Container,
-  Badge,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
-  Row
+  DropdownItem
 } from "reactstrap";
 
 const linkStyle = {
   textDecoration: 'none',
-  color: '#66615b',
-  // padding: '10px 45px 10px 15px'
-  // fontSize: 16,
-  // fontWeight: 500,
+  color: '#66615b'
 }
 
 const OfftakerNavbar = () => {
@@ -124,7 +118,7 @@ const OfftakerNavbar = () => {
                         >
                           
                           <DropdownItem header tag="span">
-                              <h5 class="p-3 mb-0" style={{fontWeight:500}}>Profile</h5>
+                              <h5 class="p-3 mb-0" style={{fontWeight:500, color:'white'}}>Profile</h5>
                               <div class="dropdown-divider"></div>
                             
                           </DropdownItem>
